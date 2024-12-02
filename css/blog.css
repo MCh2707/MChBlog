@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.icons {
+    font-size: 25px;
+}
+
+/* NAvigation */
+.nav-li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 20px;
+    flex-wrap: wrap; 
+}
+
+.li1 {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.home {
+    color: blueviolet;
+    font-weight: 500;
+}
+
+.li1-hover:hover {
+    color: blueviolet;
+    transition: 0.5s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.li1-input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.li-search {
+    border-bottom: 2px solid #000;
+}
+
+img{
+    border: 1px solid black;
+}
+
+/* Blog post */
+
+.BlogFeed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+    max-width: 1300px;
+}
+
+
+.blog1, .blog2, .blog3 {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.blog1 img, .blog2 img, .blog3 img {
+    width: 265px;
+    height: 350px;
+    border: 1px 1px 1px 0 solid black;
+}
+
+.blogPost1, .blogPost2, .blogPost3 {
+    border: 1px solid black;
+    width: 310px;
+    height: 350px;
+    padding: 10px;
+}
+
+.blogPost1 h4, .blogPost2 h4, .blogPost3 h4 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 20px;
+}
+
+.blogPost1 p, .blogPost2 p, .blogPost3 p {
+    font-size: 13px;
+    padding: 20px;
+}
+
+.blogPost1 :hover, .blogPost2 :hover, .blogPost3 :hover {
+    color: blueviolet;
+    transition: 0.3s;
+}
+
+.blog-btn{
+    align-self: center;
+}
+
+.BlogFeed-btn {
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    width: 160px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 20px;
+}
+
+.BlogFeed-btn:hover {
+    background-color: #000;
+    transition: 0.2s;
+}
+
+.BlogFeed-h4 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+
+/* Footer */
+
+footer {
+    padding: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+footer h1 {
+    margin-top: 50px;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+footer p {
+    margin: 10px 0 5px;
+    font-size: 1rem;
+    color: #555;
+}
+
+footer input, footer textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: none;
+    outline: none;
+}
+
+footer input:focus, footer textarea:focus {
+    border-color: blueviolet;
+    box-shadow: 0 0 5px rgba(217, 0, 255, 0.5);
+}
+
+footer textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.last-footer {
+    background-color: rgb(232, 230, 230);
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Responsive Design with Media Queries */
+@media (max-width: 1200px) {
+    .blog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-li {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog {
+        grid-template-columns: 1fr;
+    }
+
+    .blogPost1 h4, .blogPost2 h4, .blogPost3 h4 {
+        font-size: 16px;
+    }
+
+    .li1 {
+        margin: 5px;
+    }
+
+    .li-search input {
+        width: 100%;
+    }
+
+    .icons {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-li {
+        padding: 10px;
+    }
+
+    .blogPost1, .blogPost2, .blogPost3 {
+        font-size: 14px;
+    }
+
+    .li1 {
+        margin: 3px; 
+    }
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.last-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
